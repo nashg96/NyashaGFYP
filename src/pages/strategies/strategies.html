@@ -1,0 +1,70 @@
+<ion-header>
+ <p></p>
+    <ion-navbar>
+        <ion-buttons>
+            <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            <ion-title>Strategies and Techniques</ion-title>
+      </button>
+    </ion-buttons>
+
+    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+
+<div class="list" scroll="true">
+
+<ion-scroll style="height: 380px" direction="xy" >
+<ion-list scroll="true">
+  <button ion-item (click)="gotoattentionstrat()">
+    <ion-label >Attention</ion-label>
+  </button>
+ <button ion-item (click)="gotochunkingstrat()">
+    <ion-label>Chunking</ion-label>
+   </button>
+  <button ion-item (click)="gotorandr()">
+    <ion-label>Repeat and Rehearse</ion-label>
+   </button>
+  <button ion-item (click)="gotodeeplevel()">
+    <ion-label>Deep-Level Processing</ion-label>
+   </button>
+   <button ion-item (click)="gotofivew()">
+    <ion-label>The 5 W's</ion-label>
+   </button>
+  <button ion-item (click)="gotolinkstrat()">
+    <ion-label>Links and Associations</ion-label>
+   </button>
+  <button ion-item (click)="gotovisualstrat()">
+    <ion-label>Make visual pictures</ion-label>
+  </button>
+  <button ion-item (click)="gotofivew()">
+    <ion-label>The 5 W's</ion-label>
+   </button>
+   <button ion-item (click)="gotofirstletterstrat()">
+    <ion-label>First letter Cueing</ion-label>
+  </button>
+   <button ion-item (click)="gotostrorystrat()">
+    <ion-label>Stories or Rhymes</ion-label>
+   </button>
+   <button ion-item (click)="gotoexprehearsalstrat()">
+    <ion-label>Expanded Rehersal</ion-label>
+  </button>
+   <button ion-item (click)="gotoretrievalstrat()">
+    <ion-label>Retrieval Cues</ion-label>
+  </button>
+</ion-list>
+</ion-scroll>
+</div>
+
+<div class="navbar">
+
+ <div class="btn-group">
+  <button class="button" (click)='gotostrategies()'>Strategies</button>
+  <button class="button" (click)='gototips()'>Tips</button>
+</div>
+</div>
+
+</ion-content>

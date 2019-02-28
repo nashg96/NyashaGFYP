@@ -1,0 +1,8 @@
+{
+  "name": "memberry",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "91a95754"
+}

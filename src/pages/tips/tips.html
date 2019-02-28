@@ -1,0 +1,56 @@
+<ion-header>
+ <p></p>
+    <ion-navbar>
+        <ion-buttons>
+            <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            <ion-title>Tips</ion-title>
+      </button>
+    </ion-buttons>
+
+    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+<div class="list" scroll="true">
+
+<ion-scroll style="height: 380px" direction="xy" >
+<ion-list scroll="true">
+  <button ion-item (click)="gotoattentionstrat()">
+    <ion-label >Have a place for everything</ion-label>
+  </button>
+ <button ion-item (click)="gotochunkingstrat()">
+    <ion-label>Use a calendar at Home </ion-label>
+   </button>
+  <button ion-item (click)="gotorandr()">
+    <ion-label>Use a notebook</ion-label>
+   </button>
+  <button ion-item (click)="gotodeeplevel()">
+    <ion-label>Mamging your medications </ion-label>
+   </button>
+   <button ion-item (click)="gotofivew()">
+    <ion-label>External memory aids</ion-label>
+   </button>
+  <button ion-item (click)="gotolinkstrat()">
+    <ion-label>Improve wellbeing</ion-label>
+   </button>
+  <button ion-item (click)="gotovisualstrat()">
+    <ion-label>Getting into a routine </ion-label>
+  </button>
+  <button ion-item (click)="goto5wstrat()">
+    <ion-label>Adapt your enviroment</ion-label>
+   </button>
+</ion-list>
+</ion-scroll>
+</div>
+<div class="navbar">
+
+ <div class="btn-group">
+  <button class="button" (click)='gotostrategies()'>Strategies</button>
+  <button class="button" (click)='gototips()'>Tips</button>
+</div>
+</div>
+
+</ion-content>

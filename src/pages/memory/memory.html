@@ -1,0 +1,45 @@
+<ion-header>
+ <p></p>
+    <ion-navbar>
+        <ion-buttons>
+            <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            <ion-title>Understanding Memory</ion-title>
+      </button>
+    </ion-buttons>
+
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div >
+                   <ion-slides style="height: 380px" pager = "true">
+                    <p></p>
+                  <ion-slide *ngFor="let slide of slider">
+                     <h2 [innerHTML]="slide.title"></h2>
+                    <img [src]="slide.image"/> 
+                  </ion-slide>
+                </ion-slides>
+</div>
+
+
+<div class="navbar">
+
+
+ <div class="btn-group">
+  <button class="button" (click)='gotomemory()'>Understanding<br> Memory</button>
+  <button class="button" (click)='gotoshortterm()'>Short term <br> Memory</button>
+  <button class="button" (click)='gotolongterm()'>Long tern <br> Memory</button>
+  <button class="button" (click)='gotoprospective()'>Prospective <br> Memory</button>
+</div>
+</div>
+
+
+   
+
+</ion-content>
+
+ 

@@ -1,0 +1,36 @@
+<ion-header>
+ <p></p>
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div text-center  style = "position:absolute;  top:100px; background-color: grey">
+	<ion-item>
+		<ion-label>Email:</ion-label>
+		<ion-input [(ngModel)]="email"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-label>Password:</ion-label>
+		<ion-input type="password" [(ngModel)]="password"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label>Name:</ion-label>
+		<ion-input></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label>Age:</ion-label>
+		<ion-input ></ion-input>
+	</ion-item>
+	<button ion-button (click)='register(email, password)'>Register</button>
+</div>
+
+	
+		
+		
+
+</ion-content>

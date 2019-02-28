@@ -1,0 +1,34 @@
+<ion-menu side="left" persistent="true" [content]="myNav">
+<ion-header>
+	<ion-toolbar>
+		<p></p>
+		<ion-title>
+			Menu
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	 <ion-item>
+	 	<button  ion-item (click)='gotomemory()'> UNDERSTANDING MEMORY </button> 
+	 </ion-item>
+
+	 <ion-item>
+	 	<button ion-item (click)='gotoattention()'> ATTENTION </button> 
+	 </ion-item>
+
+	  <ion-item>
+	 	<button ion-item (click)='gotostrategies()'> STRATEGIES AND TECHNIQUES </button> 
+	 </ion-item>
+
+	 <ion-item>
+	 	<button ion-item (click)='gotoprofile()'> PROFILE </button> 
+	 </ion-item>
+
+</ion-content>
+</ion-menu>
+
+
+
+<ion-nav [root]="rootPage" #myNav ></ion-nav>

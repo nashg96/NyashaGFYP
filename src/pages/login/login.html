@@ -1,0 +1,27 @@
+<ion-header>
+ <p></p>
+  <ion-navbar>
+    <ion-title>Login Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div text-center  style = "position:absolute;  top:100px; background-color: grey">
+	<ion-item>
+		<ion-label>Email:</ion-label>
+		<ion-input [(ngModel)]="email"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-label>Password:</ion-label>
+		<ion-input type="password" [(ngModel)]="password"></ion-input>
+	</ion-item>
+</div>
+	<div text-center  style = "position:absolute; left:80px; top:200px;">
+		<button class = "button" ion-button  (click)='gotoreg()'>Register</button>
+		<button  class = "button" ion-button (click)='login(email, password)'>Login</button>
+
+	</div>
+</ion-content>
