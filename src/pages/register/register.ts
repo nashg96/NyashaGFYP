@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,ToastController } from 'ionic-angular';
 import {LoginPage} from '../pages/login/login';
+import {RegisterdetailsPage} from '../pages/registerdetails/registerdetails';
+import {RandrPage} from '../pages/randr/randr';
+
 import {AngularFireAuth} from 'angularfire2/auth';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 
 import{ AngularFireModule} from 'angularfire2/';
 import{ AngularFireDatabaseModule} from 'angularfire2/database';
@@ -25,7 +30,12 @@ import { FirebaseService } from '../services/firebase.service';
 })
 export class RegisterPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public angularFireAuth: AngularFireAuth) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public angularFireAuth: AngularFireAuth,private afAuth: AngularFireAuth) {
+  this.db = firebase.firestore();
+    this.afAuth.authState.subscribe(user => {
+        if(user) this.userId = user.uid
+      })
   }
 
   ionViewDidLoad() {
@@ -34,7 +44,7 @@ export class RegisterPage {
 
    register(email, password) {
   	this.angularFireAuth.auth.createUserWithEmailAndPassword(email, password).then((res) => {
-  		this.navCtrl.setRoot('LoginPage', {email});
+  		this.navCtrl.setRoot('RegisterdetailsPage');
   	});
   }
 

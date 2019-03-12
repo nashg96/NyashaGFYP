@@ -24,25 +24,8 @@ export class FirebaseService {
     }
 
     
-    addUser(value){
-      return new Promise<any>((resolve, reject) => {
-        this.afs.collection('/users' + this.userId).add({
-          Q1: parseInt(value.Q1),
-          Q2: parseInt(value.Q2),
-          Q3: parseInt(value.Q3),
-          Q4: parseInt(value.Q4),
-          Q5: parseInt(value.Q5),
-          Q6: parseInt(value.Q6)
-        })
-        .then(
-          (res) => {
-            resolve(res)
-          },
-          err => reject(err)
-        )
-      })
-    }
-
+    
+   
   
 
 }

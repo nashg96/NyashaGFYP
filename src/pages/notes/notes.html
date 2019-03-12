@@ -1,0 +1,22 @@
+<ion-header>
+  <p></p>
+  <ion-toolbar>
+    <ion-buttons>
+    	  <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            <ion-title>Notes</ion-title>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <button ion-item *ngFor="let note of notes | async" (click)="getNote(note.createDate)">
+    {{note.title}}
+  </button>
+</ion-list>
+
+<button ion-button (click)="addNote()">Add Note</button>
+
+</ion-content>

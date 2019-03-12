@@ -46,7 +46,7 @@ export class StrategiesPage {
     this.navCtrl.setRoot('TipsPage');
   }
 
-  gotoattentionstrat() {
+  gotoshortsurvprofile() {
     this.navCtrl.push('AttentionstratPage');
   }
 

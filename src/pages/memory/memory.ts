@@ -32,11 +32,18 @@ export class MemoryPage {
     console.log('ionViewDidLoad MemoryPage');
   }
 
+  randomIntFromInterval(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+
   async ionViewDidEnter() {
+  let number =  Math.floor(Math.random()*(5-0+1)+0);
+  let array = ["Tip1","Tip2"]
    const alert = await this.alertController.create({
       header: 'Alert',
       subHeader: 'Subtitle',
-      message: 'Exercise and eat healthy. It helps keep your mind sharp!',
+      message: array[number],
       buttons: [
               {
               text: 'See more Tips', 

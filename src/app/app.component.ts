@@ -29,7 +29,7 @@ export class MyApp {
         else{
         this.rootPage = 'LoginPage';
         }
-      });
+      });  
     });
   }
   ngOnInit() {
@@ -50,6 +50,15 @@ export class MyApp {
 
   gotoprofile() {
     this.nav.setRoot('ProfilePage');
+  }
+
+   gotocalendar() {
+    this.nav.setRoot('CalendarPage');
+  }
+
+
+   gotonotes() {
+    this.nav.setRoot('NotesPage');
   }
 
 
