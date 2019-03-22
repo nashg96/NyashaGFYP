@@ -9,6 +9,7 @@
     <ion-navbar>
         <ion-buttons>
             <button ion-button icon-only menuToggle>
+
             <ion-icon name="menu"></ion-icon>
             <ion-title>PROFILE</ion-title>
       </button>
@@ -20,6 +21,7 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-img class= "img" width="270" height="80" src="/assets/imgs/banner2.png"></ion-img>
 
    <ion-item-sliding *ngFor="let user of users">
       <ion-item>
@@ -45,22 +47,5 @@
    </ion-list>
 </ion-scroll>
 </div>
-
-<ion-list>
-   <ion-label> Short term Survey results </ion-label>
-    <ion-item-sliding *ngFor="let message of messages">
-      <ion-item>
-        <p>Q1: {{message.Q1}}</p>
-         <p>Q2: {{message.Q2}}</p>
-         <p>Q3: {{message.Q3}}</p>
-         <p>Q4: {{message.Q4}}</p>
-         <p>Q5: {{message.Q5}}</p>
-         <p>Q6: {{message.Q6}}</p>
-          <p>Q7: {{message.Q7}}</p>
-      </ion-item>
-    </ion-item-sliding>
-
-   
-  </ion-list>
    
 </ion-content>

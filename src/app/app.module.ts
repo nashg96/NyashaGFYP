@@ -13,6 +13,7 @@ import{ AngularFireAuth} from 'angularfire2/auth';
 import{FIREBASE_CONFIG} from './firebase.credentials';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { CalendarModule } from 'ionic3-calendar-en';
+import { Chart } from 'chart.js';
 
 import { FirebaseService } from '../services/firebase.service';
 

@@ -33,6 +33,10 @@ export class LongtermPage {
   slider = [
   {
       title: '',
+    image: "assets/imgs/swipetobegin.png"
+  },
+  {
+      title: '',
     image: "assets/imgs/longdiag1.png"
   },
   {

@@ -93,6 +93,10 @@ export class StrategiesPage {
   gotovisualstrat() {
     this.navCtrl.push('VisualstratPage');
   }
+ 
+  gotoattentionstrat() {
+    this.navCtrl.push('AttentionstratPage');
+  }
 
 
 }

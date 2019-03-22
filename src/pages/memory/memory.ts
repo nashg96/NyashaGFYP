@@ -64,6 +64,10 @@ export class MemoryPage {
   slider = [
   {
       title: 'Memory',
+    image: "assets/imgs/swipetobegin.png"
+  },
+  {
+      title: 'Memory',
     image: "assets/imgs/memdiag1.png"
   },
   {

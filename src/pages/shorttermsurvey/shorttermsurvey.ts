@@ -13,10 +13,11 @@ import { ShorttermPage } from '../shortterm/shortterm'
   templateUrl: 'shorttermsurvey.html',
 })
 export class ShorttermsurveyPage {
-  
-   messages: int;
+ date = new Date()
+
+  messages: int;
   private db: any;
-  model: int = {};
+  model: int = {timestamp: this.date};
   isEditing: boolean = false;
 
   constructor(public navCtrl: NavController,private afAuth: AngularFireAuth, public toastCtrl: ToastController) {
@@ -27,20 +28,6 @@ export class ShorttermsurveyPage {
       })
   }
 
-   addThemFunction () {
-   let totalarr = [];
-        let  ansone = Number(this.model.Q1) ;
-        let  anstwo = Number(this.model.Q2) ;
-        let  ansthree = Number(this.model.Q3) ;
-        let  ansfour = Number(this.model.Q4) ;
-        let  ansfive = Number(this.model.Q5) ;
-        let  anssix = Number(this.model.Q6) ;
-        this.total = ansone + anstwo + ansthree + ansfour + ansfive + anssix;
-        var obj = this.total;
-        totalarr.push(obj);
-        console.log(totalarr[0]);
-        return total;
-    }
 
 
   loadData(){
@@ -61,22 +48,8 @@ addMessage(){
       this.navCtrl.setRoot('ShorttermPage');
 
     });
+ 
 }
-
-addTotal(){
-    this.addTotalDoc("survey"+ this.userId, this.total).then(()=>{
-      this.loadData();//refresh view
-      let toast = this.toastCtrl.create({
-        message: 'Survey Completed',
-        duration: 3000
-      });
-      toast.present();
-      this.navCtrl.setRoot('ShorttermPage');
-
-    });
-}
-
-
 
 
 //CRUD operation methods------------------------------------------------------------------------------------------
@@ -104,8 +77,10 @@ getAllDocuments(users: string): Promise<any> {
 
 
 addDocument(collectionName: string, dataObj: any): Promise<any> {
+let date = new Date()
+
   return new Promise((resolve, reject) => {
-      this.db.collection(collectionName).add(dataObj)
+      this.db.collection(collectionName).add(dataObj )
           .then((obj: any) => {
               resolve(obj);
           })
@@ -113,20 +88,7 @@ addDocument(collectionName: string, dataObj: any): Promise<any> {
               reject(error);
           });
   });
+ 
 }
-
-addTotalDoc(collectionName: string, dataObj: any): Promise<any> {
-  return new Promise((resolve, reject) => {
-      this.db.collection(collectionName).add(dataObj)
-          .then((obj: any) => {
-              resolve(obj);
-          })
-          .catch((error: any) => {
-              reject(error);
-          });
-  });
-}
-
-
 
 }

@@ -28,6 +28,10 @@ export class ProspectivePage {
   }
 
    slider = [
+   {
+      title: '',
+    image: "assets/imgs/swipetobegin.png"
+  },
   {
       title: '',
     image: "assets/imgs/prospdiag1.png"

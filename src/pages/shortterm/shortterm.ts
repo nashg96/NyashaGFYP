@@ -35,7 +35,7 @@ export class ShorttermPage {
   slider = [
   {
       title: '',
-    image: "assets/imgs/shortdiag1.png"
+    image: "assets/imgs/swipetobegin.png"
   },
   {
     title: '',
