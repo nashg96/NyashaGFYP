@@ -1,7 +1,7 @@
 "# 15726701" 
 "# NyashaGFYP" 
 
-I have uploaded all the code. UNzip the folder 15726701-master. Navigate to it in the node.js terminal. Once inside the folder run ionic serve --lab.
+I have uploaded all the code. UNzip the folder 15726701. Navigate to NyashaGFYP-master in the node.js terminal. Once inside the folder run ionic serve --lab.
 
 if there is a problem with the code because of compression it is also available on github. To download the entire project go to https://github.com/nashg96/NyashaGFYP Download the file as a zip. When you save it navigate to the folder in the terminal. Once inside the the folder, Run the command “ionic serve - -lab” to view the application on iOS and android. To view as website run “ionic serve”.
 
