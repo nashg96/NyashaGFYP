@@ -92,11 +92,6 @@ export class MemoryPage {
     },
     {
     title: '',
-    image: "assets/imgs/memdiag9.0.png",
-
-    },
-    {
-    title: '',
     image: "assets/imgs/memdiag10.0.png",
 
     }
