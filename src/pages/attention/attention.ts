@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the AttentionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AttentionsurvPage } from '../attentionsurv/attentionsurv'
 
 @IonicPage()
 @Component({
@@ -25,15 +20,38 @@ export class AttentionPage {
   slider = [
   {
       title: '',
+    image: "assets/imgs/swipetobegin.png"
+  },
+  {
+      title: '',
     image: "assets/imgs/attendiag1.png"
   },{
       title: '',
     image: "assets/imgs/attendiag2.png"
-  },{
+  },
+  {
       title: '',
     image: "assets/imgs/attendiag3.png"
   },
+  {
+      title: '',
+    image: "assets/imgs/attendiag4.png"
+  },
+  {
+      title: '',
+    image: "assets/imgs/attendiag5.png"
+  },
+  {
+      title: '',
+    image: "assets/imgs/attendiag6.png"
+  },
+
   
   ];
+
+  gotoattentionsurvey() {
+    this.navCtrl.push('AttentionsurvPage');
+  }
+
 
 }

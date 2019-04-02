@@ -40,13 +40,17 @@ export class LongtermPage {
     image: "assets/imgs/longdiag1.png"
   },
   {
-    title: 'Types of information stored',
+    title: '',
      image: "assets/imgs/longdiag2.png"
   },
   {
-    title: 'How is long-term memory useful?',
+    title: '',
     image: "assets/imgs/longdiag3.png"
     },
+  {
+    title: '',
+    image: "assets/imgs/longdiag4.png"
+    }
   ];
 
 

@@ -38,49 +38,66 @@ export class MemoryPage {
 
 
   async ionViewDidEnter() {
-  let number =  Math.floor(Math.random()*(5-0+1)+0);
-  let array = ["Tip1","Tip2"]
-   const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: array[number],
-      buttons: [
-              {
-              text: 'See more Tips', 
-              handler: () => {
-                this.navCtrl.setRoot('TipsPage');
-              }
-              },{
-              text: 'OK', 
-              }
-              ]
-  });
-
-   await alert.present();
+  
 }
 
 
 
   slider = [
   {
-      title: 'Memory',
+      title: '',
     image: "assets/imgs/swipetobegin.png"
   },
   {
-      title: 'Memory',
-    image: "assets/imgs/memdiag1.png"
+      title: '',
+    image: "assets/imgs/memdiag1.0.png"
   },
   {
-  	title: 'Different aspects of Memory',
-     image: "assets/imgs/memdiag2.png"
+  	title: '',
+     image: "assets/imgs/memdiag2.0.png"
   },
   {
-  	title: 'Different aspects of Memory',
-    image: "assets/imgs/memdiag3.png"
+  	title: '',
+    image: "assets/imgs/memdiag3.0.png"
   	},
     {
-    title: 'Different aspects of Memory',
-    image: "assets/imgs/memdiag4.png",
+    title: '',
+    image: "assets/imgs/memdiag4.0.png",
+
+    },
+    {
+    title: '',
+    image: "assets/imgs/memdiag5.0.png",
+
+    },
+    {
+    title: '',
+    image: "assets/imgs/memdiag6.0.png",
+
+    },
+    {
+    title: '',
+    image: "assets/imgs/memdiag7.0.png",
+
+    },
+    {
+    title: '',
+    image: "assets/imgs/memdiag8.0.png",
+
+    },
+    {
+    title: '',
+    image: "assets/imgs/memdiag9.0.png",
+
+    },
+    {
+    title: '',
+    image: "assets/imgs/memdiag9.0.png",
+
+    },
+    {
+    title: '',
+    image: "assets/imgs/memdiag10.0.png",
 
     }
   ];

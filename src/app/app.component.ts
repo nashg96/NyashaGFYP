@@ -40,12 +40,29 @@ export class MyApp {
     this.nav.setRoot('MemoryPage');
   }
 
+   gotoshortterm() {
+    this.nav.setRoot('ShorttermPage');
+  }
+
+  gotolongterm() {
+    this.nav.setRoot('LongtermPage');
+  }
+
+  gotoprospective() {
+    this.nav.setRoot('ProspectivePage');
+  }
+
+
   gotoattention() {
     this.nav.setRoot('AttentionPage');
   }
 
   gotostrategies() {
     this.nav.setRoot('StrategiesPage');
+  }
+
+  gototips() {
+    this.nav.setRoot('TipsPage');
   }
 
   gotoprofile() {

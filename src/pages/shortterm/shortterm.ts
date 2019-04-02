@@ -39,19 +39,23 @@ export class ShorttermPage {
   },
   {
     title: '',
-     image: "assets/imgs/shortdiag2.png"
+     image: "assets/imgs/shortdiag1.0.png"
   },
   {
     title: '',
-    image: "assets/imgs/shortdiag3.png"
+    image: "assets/imgs/shortdiag2.0.png"
     },
     {
     title: '',
-    image: "assets/imgs/shortdiag4.png"
+    image: "assets/imgs/shortdiag3.0.png"
     },
     {
     title: '',
-    image: "assets/imgs/shortdiag5.png"
+    image: "assets/imgs/shortdiag4.0.png"
+    },
+    {
+    title: '', 
+    image: "assets/imgs/shortdiag5.0.png"
     }
   ];
 

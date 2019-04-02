@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar>
+  	<p>
+    <ion-title>
+    Prospective <br>survey
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Rate Yourself on a scale from 1-5 based on the following. With 1 being strongly disagree and 5 being strongly agree.
+<ion-list>
+            
+      <ion-item>
+        <ion-label floating>I have difficulty planning and organising my time.</ion-label>
+       <ion-select [(ngModel)]="model.Q1" class="form-controll" required>
+        <ion-option value=1>1 (Strongly disagree)</ion-option>
+        <ion-option value=2>2</ion-option>
+         <ion-option value=3>3</ion-option>
+         <ion-option value=4>4</ion-option>
+        <ion-option value=5>5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>I miss appointments or turn up late frequently.</ion-label>
+       <ion-select [(ngModel)]="model.Q2" class="form-controll" required>
+        <ion-option value=1>1 (Strongly disagree)</ion-option>
+        <ion-option value=2>2</ion-option>
+         <ion-option value=3>3</ion-option>
+         <ion-option value=4>4</ion-option>
+        <ion-option value=5>5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I forget important birthdays, anniversaries and events.</ion-label>
+       <ion-select [(ngModel)]="model.Q3" class="form-controll" required>
+        <ion-option value="1">1 (Strongly disagree)</ion-option>
+        <ion-option value="2">2</ion-option>
+         <ion-option value="3">3</ion-option>
+         <ion-option value="4">4</ion-option>
+        <ion-option value="5">5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I sometimes forget to take medication at the correct time.</ion-label>
+       <ion-select [(ngModel)]="model.Q4" class="form-controll" required>
+        <ion-option value="1">1 (Strongly disagree)</ion-option>
+        <ion-option value="2">2</ion-option>
+         <ion-option value="3">3</ion-option>
+         <ion-option value="4">4</ion-option>
+        <ion-option value="5">5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I constantly forget where I have placed things, such as car keys.</ion-label>
+       <ion-select [(ngModel)]="model.Q5" class="form-controll" required>
+        <ion-option value="1">1 (Strongly disagree)</ion-option>
+        <ion-option value="2">2</ion-option>
+         <ion-option value="3">3</ion-option>
+         <ion-option value="4">4</ion-option>
+        <ion-option value="5">5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I go to  shops and forget what I was going to buy.</ion-label>
+       <ion-select [(ngModel)]="model.Q6" class="form-controll" required>
+        <ion-option value=1>1 (Strongly disagree)</ion-option>
+        <ion-option value=2>2</ion-option>
+         <ion-option value=3>3</ion-option>
+         <ion-option value=4>4</ion-option>
+        <ion-option value=5>5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <button type="button" (click)="addMessage();" ion-button full >Submit</button>
+      </ion-item>
+</ion-list>
+
+  
+</ion-content>

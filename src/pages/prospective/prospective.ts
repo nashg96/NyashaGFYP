@@ -6,6 +6,8 @@ import { ShorttermPage } from '../shortterm/shortterm'
 import { LongtermPage } from '../longterm/longterm'
 import { ProspectivePage } from '../prospective/prospective'
 
+import { ProspectivesurvPage } from '../prospectivesurv/prospectivesurv'
+
 /**
  * Generated class for the ProspectivePage page.
  *
@@ -41,26 +43,18 @@ export class ProspectivePage {
      image: "assets/imgs/prospdiag2.png"
   },
   {
-    title: 'How is it helpful?',
+    title: '',
     image: "assets/imgs/prospdiag3.png"
+    },
+    {
+    title: '',
+    image: "assets/imgs/prospdiag4.png"
     },
   
   ];
 
 
-   gotomemory() {
-    this.navCtrl.setRoot('MemoryPage');
-  }
-
-   gotoshortterm() {
-    this.navCtrl.setRoot('ShorttermPage');
-  }
-
-  gotolongterm() {
-    this.navCtrl.setRoot('LongtermPage');
-  }
-
-  gotoprospective() {
-    this.navCtrl.setRoot('ProspectivePage');
+    gotoprospsurvey() {
+    this.navCtrl.push('ProspectivesurvPage');
   }
 }	

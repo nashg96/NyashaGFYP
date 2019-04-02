@@ -31,14 +31,14 @@ export class ShorttermsurveyPage {
 
 
   loadData(){
-    this.getAllDocuments("survey"+ this.userId).then((e)=>{
+    this.getAllDocuments("ShorttermSurvey"+ this.userId).then((e)=>{
       this.messages = e;
   });
   }
 
 
 addMessage(){
-    this.addDocument("survey"+ this.userId, this.model).then(()=>{
+    this.addDocument("ShorttermSurvey"+ this.userId, this.model).then(()=>{
       this.loadData();//refresh view
       let toast = this.toastCtrl.create({
         message: 'Survey Completed',

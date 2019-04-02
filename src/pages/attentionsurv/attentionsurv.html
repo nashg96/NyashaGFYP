@@ -1,0 +1,83 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    	<p>
+    Attention <br>survey
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Rate Yourself on a scale from 1-5 based on the following. With 1 being strongly disagree and 5 being strongly agree.
+<ion-list>
+            
+      <ion-item>
+        <ion-label floating>Im slow at processing information <br>, and therefore dont take everything in.</ion-label>
+       <ion-select [(ngModel)]="model.Q1" class="form-controll" required>
+        <ion-option value=1>1 (Strongly disagree)</ion-option>
+        <ion-option value=2>2</ion-option>
+         <ion-option value=3>3</ion-option>
+         <ion-option value=4>4</ion-option>
+        <ion-option value=5>5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>I am easily distracted.</ion-label>
+       <ion-select [(ngModel)]="model.Q2" class="form-controll" required>
+        <ion-option value=1>1 (Strongly disagree)</ion-option>
+        <ion-option value=2>2</ion-option>
+         <ion-option value=3>3</ion-option>
+         <ion-option value=4>4</ion-option>
+        <ion-option value=5>5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I cannot filter out background noise.</ion-label>
+       <ion-select [(ngModel)]="model.Q3" class="form-controll" required>
+        <ion-option value="1">1 (Strongly disagree)</ion-option>
+        <ion-option value="2">2</ion-option>
+         <ion-option value="3">3</ion-option>
+         <ion-option value="4">4</ion-option>
+        <ion-option value="5">5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I have difficulty doing two things at once.</ion-label>
+       <ion-select [(ngModel)]="model.Q4" class="form-controll" required>
+        <ion-option value="1">1 (Strongly disagree)</ion-option>
+        <ion-option value="2">2</ion-option>
+         <ion-option value="3">3</ion-option>
+         <ion-option value="4">4</ion-option>
+        <ion-option value="5">5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I have difficulty concentrating for long periods of time.</ion-label>
+       <ion-select [(ngModel)]="model.Q5" class="form-controll" required>
+        <ion-option value="1">1 (Strongly disagree)</ion-option>
+        <ion-option value="2">2</ion-option>
+         <ion-option value="3">3</ion-option>
+         <ion-option value="4">4</ion-option>
+        <ion-option value="5">5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>I have difficulty switching my attention from one thing to the other.</ion-label>
+       <ion-select [(ngModel)]="model.Q6" class="form-controll" required>
+        <ion-option value=1>1 (Strongly disagree)</ion-option>
+        <ion-option value=2>2</ion-option>
+         <ion-option value=3>3</ion-option>
+         <ion-option value=4>4</ion-option>
+        <ion-option value=5>5 (Strongly agree)</ion-option>
+     </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <button type="button" (click)="addMessage();" ion-button full >Submit</button>
+      </ion-item>
+</ion-list>
+
+  
+</ion-content>

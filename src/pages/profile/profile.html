@@ -21,6 +21,7 @@
 </ion-header>
 
 <ion-content padding>
+  <body>
   <ion-img class= "img" width="270" height="80" src="/assets/imgs/banner2.png"></ion-img>
 
    <ion-item-sliding *ngFor="let user of users">
@@ -33,19 +34,20 @@
 
   <div class="list" scroll="true">
 
-<ion-scroll style="height: 380px" direction="xy" >
-<ion-list scroll="true">
+
   <button ion-item (click)="gotoshortsurvprofile()">
-    <ion-label >Short Term Memory Progress</ion-label>
+    <ion-label >Short Term <br>Memory Progress</ion-label>
   </button>
- <button ion-item (click)="gotochunkingstrat()">
-    <ion-label>Long Term Memory Progress</ion-label>
+ <button ion-item (click)="gotolongsurvprofile()">
+    <ion-label>Long Term <br>Memory Progress</ion-label>
    </button>
-  <button ion-item (click)="gotorandr()">
-    <ion-label>Prospective Term Memory Progress</ion-label>
+  <button ion-item (click)="gotoprospectivesurvprofile()">
+    <ion-label>Prospective Term<br> Memory Progress</ion-label>
    </button>
-   </ion-list>
-</ion-scroll>
+    <button ion-item (click)="gotoattentionsurvprofile()">
+    <ion-label>Attention<br> Progress</ion-label>
+   </button>
+  
 </div>
-   
+   </body>
 </ion-content>

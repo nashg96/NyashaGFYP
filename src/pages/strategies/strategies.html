@@ -4,7 +4,7 @@
         <ion-buttons>
             <button ion-button icon-only menuToggle>
             <ion-icon name="menu"></ion-icon>
-            <ion-title>Strategies and Tips</ion-title>
+            <ion-title>Strategies</ion-title>
       </button>
     </ion-buttons>
 
@@ -12,10 +12,13 @@
   </ion-navbar>
 
 </ion-header>
-
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <ion-content >
-
-<div class="Container">
+<div class="w3-container w3-teal" padding>
+Retrieval is the process of accessing information stored in long-term memory. Through retrieval, we are taking our memories out of storage and becoming consciously aware of them. Below are some staartegies to help you with memory retrieval.
+</div>
         <div class="Left">
 <ion-list scroll="true">
   <button ion-item (click)="gotoattentionstrat()">
@@ -42,25 +45,16 @@
    <button ion-item (click)="gotofirstletterstrat()">
     <ion-label>First letter Cueing</ion-label>
   </button>
-   <button ion-item (click)="gotostrorystrat()">
+   <button ion-item (click)="gotostorystrat()">
     <ion-label>Stories or Rhymes</ion-label>
    </button>
    <button ion-item (click)="gotoexprehearsalstrat()">
     <ion-label>Expanded Rehersal</ion-label>
   </button>
-   <button ion-item (click)="gotoretrievalstrat()">
-    <ion-label>Retrieval Cues</ion-label>
-  </button>
 </ion-list>
 </div>
-</div>
 
-<div class="navbar">
 
- <div class="btn-group">
-  <button class="button" (click)='gotostrategies()'>Strategies</button>
-  <button class="button" (click)='gototips()'>Tips</button>
-</div>
-</div>
+
 
 </ion-content>

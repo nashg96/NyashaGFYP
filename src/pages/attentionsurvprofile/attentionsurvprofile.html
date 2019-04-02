@@ -1,0 +1,43 @@
+<ion-header>
+ <p></p>
+    <ion-navbar>
+        <ion-buttons>
+            <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            <ion-title>Attention Survey</ion-title>
+      </button>
+    </ion-buttons>
+
+    
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+<ion-card>
+      <ion-card-header>
+        Bar Chart
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+
+
+<ion-list>
+   <ion-label> Attention Survey results </ion-label>
+    <ion-item-sliding *ngFor="let message of messages">
+      <ion-item>
+        <p>Q1: {{message.Q1}}</p>
+         <p>Q2: {{message.Q2}}</p>
+         <p>Q3: {{message.Q3}}</p>
+         <p>Q4: {{message.Q4}}</p>
+         <p>Q5: {{message.Q5}}</p>
+         <p>Q6: {{message.Q6}}</p>
+      </ion-item>
+    </ion-item-sliding>
+
+   
+  </ion-list>
+   
+</ion-content>

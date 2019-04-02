@@ -93,7 +93,7 @@ export class ShortsurvprofilePage {
   
 
   loadData(){
-    this.getAllDocuments("survey"+ this.userId).then((e)=>{
+    this.getAllDocuments("ShorttermSurvey"+ this.userId).then((e)=>{
       this.messages = e;
      
   });

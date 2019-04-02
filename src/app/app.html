@@ -9,9 +9,26 @@
 </ion-header>
 
 <ion-content padding>
+<ion-list>
 
 	 <ion-item menuClose>
-	 	<button  ion-item (click)='gotomemory()'> UNDERSTANDING MEMORY </button> 
+	 	<button ion-item (click)='gotoprofile()'> PROFILE </button> 
+	 </ion-item>
+
+	 <ion-item menuClose>
+	 	<button  ion-item (click)='gotomemory()'> UNDERSTANDING <br>MEMORY </button> 
+	 </ion-item>
+
+	 <ion-item menuClose>
+	 	<button  ion-item (click)='gotoshortterm()'> SHORT TERM </button> 
+	 </ion-item>
+
+	 <ion-item menuClose>
+	 	<button  ion-item (click)='gotolongterm()'> LONG TERM </button> 
+	 </ion-item>
+
+	 <ion-item menuClose>
+	 	<button  ion-item (click)='gotoprospective()'> PROSPECTIVE </button> 
 	 </ion-item>
 
 	 <ion-item menuClose>
@@ -19,21 +36,22 @@
 	 </ion-item>
 
 	  <ion-item menuClose>
-	 	<button ion-item (click)='gotostrategies()'> STRATEGIES AND TECHNIQUES </button> 
+	 	<button ion-item (click)='gotostrategies()'> STRATEGIES </button> 
 	 </ion-item>
 
 	 <ion-item menuClose>
-	 	<button ion-item (click)='gotoprofile()'> PROFILE </button> 
+	 	<button ion-item (click)='gototips()'> TIPS </button> 
 	 </ion-item>
+
 
 	 <ion-item menuClose>
 	 	<button ion-item (click)='gotocalendar()'> CALENDAR </button> 
 	 </ion-item>
 
 	 <ion-item menuClose>
-	 	<button ion-item (click)='gotonotes()'> Notes </button> 
+	 	<button ion-item (click)='gotonotes()'> NOTES </button> 
 	 </ion-item>
-
+</ion-list>
 </ion-content>
 </ion-menu>
 

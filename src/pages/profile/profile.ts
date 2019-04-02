@@ -8,6 +8,9 @@ import { AngularFireAuth } from 'angularfire2/auth';
 
 import { ShorttermsurveyPage } from '../shorttermsurvey/shorttermsurvey';
 import { ShortsurvprofilePage } from '../shortsurvprofile/shortsurvprofile'
+import { LongsurvprofilePage } from '../longsurvprofile/longsurvprofile'
+import { ProspectivesurvprofilePage } from '../prospectivesurvprofile/prospectivesurvprofile'
+import { AttentionsurvprofilePage } from '../attentionsurvprofile/attentionsurvprofile'
 
 
 /**
@@ -69,5 +72,17 @@ getAllUserDocuments(users: string): Promise<any> {
 
 gotoshortsurvprofile() {
     this.navCtrl.push('ShortsurvprofilePage');
+  }
+
+  gotolongsurvprofile() {
+    this.navCtrl.push('LongsurvprofilePage');
+  }
+
+  gotoprospectivesurvprofile() {
+    this.navCtrl.push('ProspectivesurvprofilePage');
+  }
+
+  gotoattentionsurvprofile() {
+    this.navCtrl.push('AttentionsurvprofilePage');
   }
 }
