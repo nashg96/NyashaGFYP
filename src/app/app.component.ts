@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {AngularFireAuth} from 'angularfire2/auth';
 import {rootRenderNodes} from '@angular/core/src/view'; 
+import {AngularFireAuth} from 'angularfire2/auth';
 
 
 @Component({
@@ -76,6 +77,10 @@ export class MyApp {
 
    gotonotes() {
     this.nav.setRoot('NotesPage');
+  }
+
+  logout() {
+    this.nav.setRoot('LoginPage');
   }
 
 
